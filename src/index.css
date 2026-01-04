@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Dark theme for Hero */
+    --background: 220 20% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 220 18% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 220 18% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 328 100% 54%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 18% 16%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 220 15% 20%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 328 100% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 328 100% 54%;
+
+    --radius: 0.25rem;
+
+    /* Custom design tokens */
+    --gradient-hero: linear-gradient(180deg, hsl(220 20% 3%) 0%, hsl(220 20% 8%) 100%);
+    --gradient-section: linear-gradient(180deg, hsl(220 20% 8%) 0%, hsl(220 18% 10%) 100%);
+    --shadow-glow: 0 0 30px hsl(328 100% 54% / 0.3);
+    --text-gradient: linear-gradient(90deg, hsl(328 100% 54%), hsl(280 100% 65%));
+
+    --sidebar-background: 220 18% 10%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 328 100% 54%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 18% 16%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 220 15% 20%;
+    --sidebar-ring: 328 100% 54%;
+
+    /* Light section theme */
+    --light-background: 0 0% 100%;
+    --light-foreground: 220 15% 20%;
+    --light-muted: 220 10% 96%;
+    --light-muted-foreground: 220 10% 45%;
+    --light-border: 220 10% 90%;
+    --light-card: 0 0% 98%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+  }
+}
+
+/* Light section styling */
+.light-section {
+  background-color: hsl(var(--light-background));
+  color: hsl(var(--light-foreground));
+}
+
+.light-section .text-foreground {
+  color: hsl(var(--light-foreground));
+}
+
+.light-section .text-muted-foreground {
+  color: hsl(var(--light-muted-foreground));
+}
+
+.light-section .border-border {
+  border-color: hsl(var(--light-border));
+}
+
+.light-section .bg-card {
+  background-color: hsl(var(--light-card));
+}
+
+.light-section .bg-muted {
+  background-color: hsl(var(--light-muted));
+}
+
+@layer utilities {
+  .text-gradient {
+    background: var(--text-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .section-gradient {
+    background: var(--gradient-section);
+  }
+
+  .glow {
+    box-shadow: var(--shadow-glow);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
+
+/* Star animation */
+@keyframes twinkle {
+  0%, 100% { opacity: 0.3; }
+  50% { opacity: 1; }
+}
+
+.star {
+  animation: twinkle 3s ease-in-out infinite;
+}
+
+/* Skill bar animation */
+@keyframes fillBar {
+  from { width: 0; }
+}
+
+.skill-bar {
+  animation: fillBar 1.5s ease-out forwards;
+}
+
+/* Fade in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
