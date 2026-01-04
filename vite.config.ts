@@ -4,7 +4,7 @@ import path from "path";
 
 // Vite configuration for React + TypeScript project
 export default defineConfig({
-  base: '/KRISHNA-CHAITANYA-BODEPUDI/',
+  base: '/',
   server: {
     host: "::",
     port: 8080,

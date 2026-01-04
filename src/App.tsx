@@ -13,7 +13,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter basename="/KRISHNA-CHAITANYA-BODEPUDI">
+      <BrowserRouter basename="/">
         <Routes>
           <Route path="/" element={<Index />} />
           {/* Custom routes can be added here before the catch-all route */}
