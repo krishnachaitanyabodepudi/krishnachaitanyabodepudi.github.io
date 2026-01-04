@@ -32,7 +32,7 @@ const Navigation = () => {
               <li key={item.label}>
                 {item.label === "Resume" ? (
                   <a
-                    href="/krishna-chaitanya-bodepudi.pdf"
+                    href={`${import.meta.env.BASE_URL}krishna-chaitanya-bodepudi.pdf`}
                     download="krishna-chaitanya-bodepudi.pdf"
                     onClick={() => setIsOpen(false)}
                     className="block text-muted-foreground hover:text-primary transition-colors font-sans text-sm uppercase tracking-wider"
