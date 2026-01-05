@@ -20,9 +20,17 @@ const AboutSection = () => {
               className="w-full h-full object-cover"
             />
           </div>
-          <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-            I work on backend and applied ML systems where LLMs are part of a larger service, not the entire product. Most of my experience is in building API-driven services that manage memory, retrieval, and inference under real-world constraints such as concurrency, partial failures, and imperfect data.
-          </p>
+          <div className="space-y-4">
+            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
+              I have professional experience building ML-driven backend systems and AI-enabled services that support real product workflows. My work sits at the intersection of applied machine learning and software engineering, where models need to be integrated into APIs, operated reliably, and behave predictably under real-world constraints.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
+              I tend to start with system boundaries: what data is allowed to flow, under what scope, and what should happen when a component fails. This approach has shaped how I design inference services, retrieval pipelines, and ML-backed APIs, where incorrect behavior is treated as a failure condition rather than an acceptable tradeoff.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
+              I'm comfortable operating across applied ML, GenAI components, and backend engineering, and I look for roles where ML capabilities need to fit cleanly into larger systems instead of existing as isolated experiments.
+            </p>
+          </div>
         </div>
 
         {/* Two-column: Profile and Focus */}
@@ -32,7 +40,10 @@ const AboutSection = () => {
               Profile
             </h3>
             <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-              I tend to focus on system boundaries first: what data is allowed to flow, under what scope, and what should happen when a component fails. This has led me to design memory and retrieval systems where incorrect recall is treated as a failure condition rather than a best-effort outcome.
+              Applied AI / ML Engineer with experience across ML-backed backend systems, inference services, and AI-enabled APIs. Background includes both full-time engineering work and internship experience, contributing to production-adjacent systems used beyond experimental settings.
+            </p>
+            <p className="leading-relaxed mt-4" style={{ color: 'hsl(220 10% 45%)' }}>
+              My strengths lie in integrating models into real systems, handling edge cases, and ensuring predictable runtime behavior. I work comfortably across Python-based backends, ML pipelines, and API-driven architectures where correctness, maintainability, and reliability matter.
             </p>
           </div>
           <div>
@@ -40,7 +51,10 @@ const AboutSection = () => {
               Focus
             </h3>
             <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-              I'm most effective in roles where AI features need to integrate cleanly into backend infrastructure, whether that's applied ML, GenAI systems, or ML-adjacent backend engineering, and where predictable behavior matters more than novelty.
+              I focus on roles where machine learning and AI are part of a larger system, not the entire product. This includes applied ML engineering, GenAI feature development, and ML-adjacent backend engineering.
+            </p>
+            <p className="leading-relaxed mt-4" style={{ color: 'hsl(220 10% 45%)' }}>
+              I'm particularly effective in environments where models must be exposed through APIs, operate under latency and reliability constraints, and integrate with existing data and backend infrastructure. I prioritize building systems that are understandable, testable, and predictable in production.
             </p>
           </div>
         </div>
