@@ -1,28 +1,32 @@
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Languages",
-      skills: ["Python", "SQL"],
+      title: "Programming & Data",
+      skills: ["Python", "SQL", "Pandas", "NumPy"],
     },
     {
-      title: "Backend & APIs",
-      skills: ["FastAPI", "REST APIs", "Async request handling", "API-based service design"],
+      title: "Backend Engineering",
+      skills: ["FastAPI", "REST APIs", "async request handling", "API-based service design", "backend integration"],
+    },
+    {
+      title: "Applied AI & Machine Learning",
+      skills: ["Model integration", "inference pipelines", "feature engineering", "model evaluation", "ML-backed services"],
+    },
+    {
+      title: "GenAI & Semantic Systems",
+      skills: ["Embeddings", "semantic retrieval", "retrieval-augmented generation (RAG)", "FAISS", "Hugging Face Transformers"],
     },
     {
       title: "Data & Storage",
-      skills: ["PostgreSQL", "SQLite", "MongoDB", "Pandas", "NumPy", "SQLAlchemy"],
+      skills: ["PostgreSQL", "SQLite", "MongoDB", "SQLAlchemy"],
     },
     {
-      title: "ML / LLM Systems",
-      skills: ["Vector embeddings", "Semantic retrieval", "Retrieval-augmented generation (RAG)", "FAISS", "Hugging Face Transformers", "Model inference pipelines"],
+      title: "Infrastructure & Operations",
+      skills: ["Docker", "CI/CD (GitHub Actions)", "model serving", "environment isolation", "Linux", "AWS", "Git"],
     },
     {
-      title: "Machine Learning Foundations",
-      skills: ["PyTorch", "Scikit-learn", "Feature engineering", "Model training and evaluation"],
-    },
-    {
-      title: "Infrastructure & MLOps",
-      skills: ["Docker", "CI/CD (GitHub Actions)", "Environment isolation", "Model serving", "AWS", "Linux", "Git"],
+      title: "System Design & Reliability",
+      skills: ["Request scoping", "data isolation", "defensive failure handling", "edge-case validation", "predictable runtime behavior"],
     },
   ];
 
