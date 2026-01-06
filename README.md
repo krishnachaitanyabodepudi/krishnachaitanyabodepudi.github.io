@@ -89,6 +89,6 @@ There is no backend component in this repository.
 
 If you're interested in production AI systems, LLM-backed services, or ML-adjacent backend engineering, you can reach me at:
 
-- **Email:** kcbodepudi@gmail.com
+- **Email:** kcbodepudi021@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/krishna-chaitanya-bodepudi
 - **GitHub:** https://github.com/krishnachaitanyabodepudi

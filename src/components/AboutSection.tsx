@@ -93,7 +93,7 @@ const AboutSection = () => {
           </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider mb-1" style={{ color: 'hsl(220 15% 20%)' }}>Email:</p>
-            <a href="mailto:kcbodepudi21@gmail.com" className="text-primary hover:underline">kcbodepudi21@gmail.com</a>
+            <a href="mailto:kcbodepudi021@gmail.com" className="text-primary hover:underline">kcbodepudi021@gmail.com</a>
           </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider mb-1" style={{ color: 'hsl(220 15% 20%)' }}>LinkedIn:</p>
