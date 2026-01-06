@@ -22,10 +22,10 @@ const AboutSection = () => {
           </div>
           <div className="space-y-4">
             <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-              I build ML inference and LLM-backed backend systems where incorrect outputs are treated as failures, not acceptable tradeoffs. My focus is on turning models into API-driven services that behave predictably under load, malformed inputs, and partial context.
+              I build ML-driven backend systems and AI-enabled services that support real product workflows. My work sits at the intersection of applied machine learning and backend engineering, where models are exposed through APIs, operated reliably, and expected to behave predictably under real-world constraints.
             </p>
             <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-              My work centers on FastAPI-based inference services, embedding-based retrieval pipelines, and strict validation and failure handling. In applied systems, this approach has reduced inference latency by 20–25% and cut malformed or partial responses by ~30% through batching, validation, and fallback strategies.
+              I focus on system boundaries, failure handling, and correctness, treating incorrect behavior as a failure condition rather than an acceptable tradeoff. This approach has shaped how I build inference services, retrieval pipelines, and ML-backed APIs intended for production-like environments.
             </p>
           </div>
         </div>
@@ -36,7 +36,7 @@ const AboutSection = () => {
             Profile
           </h3>
           <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-            Applied AI / ML Engineer specializing in production-grade ML inference services and LLM-powered backend systems, with a strong emphasis on correctness, reliability, and predictable API behavior.
+            Applied AI / ML Engineer focused on ML inference services, LLM-powered backends, and reliable API-driven systems.
           </p>
         </div>
 
@@ -51,7 +51,7 @@ const AboutSection = () => {
                 ML Inference & APIs
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Building FastAPI-based inference services optimized for latency and parallel execution, with explicit input validation, batching, and safe failure behavior.
+                Building FastAPI-based inference services with attention to latency, batching, validation, and safe failure behavior.
               </p>
             </div>
             <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
@@ -59,7 +59,7 @@ const AboutSection = () => {
                 LLM & Retrieval Systems
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Designing embedding-based retrieval pipelines with strict scoping and relevance control to ensure consistent, non-misleading context injection.
+                Implementing embedding-based retrieval pipelines with strict scoping, relevance control, and predictable context injection.
               </p>
             </div>
             <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
@@ -67,7 +67,7 @@ const AboutSection = () => {
                 Reliability & Failure Handling
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Treating malformed inputs, low-confidence outputs, and edge cases as first-class failure conditions rather than silent degradations.
+                Designing systems that handle malformed inputs, low-confidence outputs, and edge cases without returning misleading results.
               </p>
             </div>
             <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
@@ -75,7 +75,7 @@ const AboutSection = () => {
                 Backend for Applied ML
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Developing Python-based backend services and data pipelines that integrate machine learning cleanly into larger systems with clear operational boundaries.
+                Developing Python-based services and data pipelines that integrate ML cleanly into larger backend systems.
               </p>
             </div>
           </div>
