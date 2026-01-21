@@ -22,10 +22,13 @@ const AboutSection = () => {
           </div>
           <div className="space-y-4">
             <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-              I build ML-driven backend systems and AI-enabled services that support real product workflows. My work sits at the intersection of applied machine learning and backend engineering, where models are exposed through APIs, operated reliably, and expected to behave predictably under real-world constraints.
+              I am Krishna Chaitanya Bodepudi, a Machine Learning Engineer specializing in building ML-driven backend systems and AI-enabled services for real product workflows.
             </p>
             <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-              I focus on system boundaries, failure handling, and correctness, treating incorrect behavior as a failure condition rather than an acceptable tradeoff. This approach has shaped how I build inference services, retrieval pipelines, and ML-backed APIs intended for production-like environments.
+              My work sits at the intersection of applied machine learning and backend engineering, where models are exposed through APIs, operated under real-world constraints, and expected to behave predictably in production-like environments. I focus on designing systems where correctness, isolation, and failure handling are first-class concerns, not afterthoughts.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
+              Rather than optimizing models in isolation, I prioritize how ML systems behave once deployed: how they handle malformed inputs, retrieval ambiguity, concurrency, and downstream integration. I treat incorrect or misleading outputs as system failures, and design defensively to prevent them.
             </p>
           </div>
         </div>
@@ -35,9 +38,15 @@ const AboutSection = () => {
           <h3 className="text-xl font-serif mb-4 uppercase tracking-wider font-semibold" style={{ color: 'hsl(220 15% 20%)' }}>
             Profile
           </h3>
-          <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-            Applied AI / ML Engineer focused on ML inference services, LLM-powered backends, and reliable API-driven systems.
+          <p className="leading-relaxed mb-4" style={{ color: 'hsl(220 10% 45%)' }}>
+            Machine Learning Engineer focused on:
           </p>
+          <ul className="list-disc list-inside space-y-2 ml-4" style={{ color: 'hsl(220 10% 45%)' }}>
+            <li>ML inference services</li>
+            <li>LLM-powered backend systems</li>
+            <li>Retrieval-augmented architectures</li>
+            <li>Reliability-first, API-driven ML systems</li>
+          </ul>
         </div>
 
         {/* Focus Areas */}
@@ -51,7 +60,7 @@ const AboutSection = () => {
                 ML Inference & APIs
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Building FastAPI-based inference services with attention to latency, batching, validation, and safe failure behavior.
+                Designing FastAPI-based inference services with attention to latency, batching, validation, and predictable failure behavior under concurrent usage.
               </p>
             </div>
             <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
@@ -59,7 +68,7 @@ const AboutSection = () => {
                 LLM & Retrieval Systems
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Implementing embedding-based retrieval pipelines with strict scoping, relevance control, and predictable context injection.
+                Building embedding-based retrieval pipelines with strict scoping, relevance control, and deterministic context injection for downstream LLM inference.
               </p>
             </div>
             <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
@@ -67,15 +76,15 @@ const AboutSection = () => {
                 Reliability & Failure Handling
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Designing systems that handle malformed inputs, low-confidence outputs, and edge cases without returning misleading results.
+                Designing systems that handle malformed inputs, low-confidence retrieval, and partial failures without returning misleading or unsafe outputs.
               </p>
             </div>
             <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
               <h4 className="text-lg font-serif font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>
-                Backend for Applied ML
+                Backend Engineering for Applied ML
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Developing Python-based services and data pipelines that integrate ML cleanly into larger backend systems.
+                Developing Python-based backend services and data pipelines that integrate ML cleanly into larger systems through stable APIs and clear contracts.
               </p>
             </div>
           </div>
@@ -93,7 +102,7 @@ const AboutSection = () => {
           </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider mb-1" style={{ color: 'hsl(220 15% 20%)' }}>Email:</p>
-            <a href="mailto:kcbodepudi021@gmail.com" className="text-primary hover:underline">kcbodepudi021@gmail.com</a>
+            <a href="mailto:kcbodepudi@gmail.com" className="text-primary hover:underline">kcbodepudi@gmail.com</a>
           </div>
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider mb-1" style={{ color: 'hsl(220 15% 20%)' }}>LinkedIn:</p>

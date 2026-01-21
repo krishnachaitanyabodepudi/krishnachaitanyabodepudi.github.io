@@ -5,8 +5,8 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email",
-      value: "kcbodepudi021@gmail.com",
-      href: "mailto:kcbodepudi021@gmail.com",
+      value: "kcbodepudi@gmail.com",
+      href: "mailto:kcbodepudi@gmail.com",
     },
     {
       icon: Phone,

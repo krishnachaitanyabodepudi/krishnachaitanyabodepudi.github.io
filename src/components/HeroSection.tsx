@@ -56,7 +56,7 @@ const HeroSection = () => {
   const socialLinks = [
     { icon: Github, href: "https://github.com/krishnachaitanyabodepudi", label: "GitHub" },
     { icon: Linkedin, href: "https://www.linkedin.com/in/krishna-chaitanya-bodepudi", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:kcbodepudi021@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:kcbodepudi@gmail.com", label: "Email" },
   ];
 
   return (
