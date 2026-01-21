@@ -86,12 +86,16 @@ const HeroSection = () => {
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40 z-[1]"></div>
       <div className="text-center z-10 max-w-4xl mx-auto relative">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-foreground mb-8 fade-in-up" style={{ animationDelay: "0.2s" }}>
-          I'm Krishna Chaitanya<br />Bodepudi.
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-foreground mb-4 fade-in-up" style={{ animationDelay: "0.2s" }}>
+          I'm Krishna Chaitanya Bodepudi.
         </h1>
 
+        <p className="text-xl md:text-2xl lg:text-3xl font-serif font-normal text-foreground mb-4 fade-in-up" style={{ animationDelay: "0.3s", textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)' }}>
+          Machine Learning Engineer
+        </p>
+
         <p className="font-sans text-sm md:text-base uppercase tracking-wider mb-12 fade-in-up font-bold text-foreground" style={{ animationDelay: "0.4s", textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)' }}>
-          Applied AI / ML Engineer · GenAI / LLM Engineer · Backend Engineer (ML-adjacent)
+          Applied AI · LLM & Retrieval Systems · Backend Engineering
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 fade-in-up" style={{ animationDelay: "0.6s" }}>
