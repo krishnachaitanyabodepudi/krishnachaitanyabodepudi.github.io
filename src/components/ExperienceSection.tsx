@@ -4,7 +4,7 @@ const ExperienceSection = () => {
       title: "Machine Learning Engineer",
       company: "Optum – UnitedHealth Group",
       location: "USA (Remote)",
-      period: "January 2024 – Present",
+      period: "January 2025 – Present",
       highlights: [
         "At Optum, I work on applied machine learning systems that support internal analytics and decision-support workflows. My role focuses on ML inference services, retrieval-augmented generation pipelines, and reliability-first backend systems, rather than offline model experimentation.",
         "I am responsible for designing and operating ML systems where correctness, isolation, and predictable behavior under load are treated as core requirements.",
