@@ -72,20 +72,34 @@ const ExperienceSection = () => {
         </div>
 
         {/* Education */}
-        <div className="pt-8 border-t" style={{ borderColor: 'hsl(220 10% 85%)' }}>
-          <h3 className="text-xl font-serif mb-6 uppercase tracking-wider" style={{ color: 'hsl(220 15% 20%)' }}>
+        <div className="pt-8 border-t" style={{ borderColor: "hsl(220 10% 85%)" }}>
+          <h3 className="text-xl font-serif mb-6 uppercase tracking-wider" style={{ color: "hsl(220 15% 20%)" }}>
             Education
           </h3>
-          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-            <div>
-              <h4 className="text-lg font-serif" style={{ color: 'hsl(220 15% 20%)' }}>
-                {education.degree}
-              </h4>
-              <p className="text-primary font-medium">{education.school}</p>
+          <div className="space-y-6">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <h4 className="text-lg font-serif" style={{ color: "hsl(220 15% 20%)" }}>
+                  {education.degree}
+                </h4>
+                <p className="text-primary font-medium">{education.school}</p>
+              </div>
+              <div className="text-right mt-2 md:mt-0">
+                <p style={{ color: "hsl(220 10% 45%)" }}>{education.gpa}</p>
+                <p style={{ color: "hsl(220 10% 55%)" }}>{education.location}</p>
+              </div>
             </div>
-            <div className="text-right mt-2 md:mt-0">
-              <p style={{ color: 'hsl(220 10% 45%)' }}>{education.gpa}</p>
-              <p style={{ color: 'hsl(220 10% 55%)' }}>{education.location}</p>
+
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div>
+                <h4 className="text-lg font-serif" style={{ color: "hsl(220 15% 20%)" }}>
+                  Bachelor of Technology in Electronics and Communication Engineering
+                </h4>
+                <p className="text-primary font-medium">VR Siddhartha Engineering College</p>
+              </div>
+              <div className="text-right mt-2 md:mt-0">
+                <p style={{ color: "hsl(220 10% 55%)" }}>Vijayawada, India</p>
+              </div>
             </div>
           </div>
         </div>

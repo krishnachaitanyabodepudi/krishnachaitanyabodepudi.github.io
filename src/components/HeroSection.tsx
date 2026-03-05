@@ -107,20 +107,7 @@ const HeroSection = () => {
           Applied AI · Model Evaluation · Data Annotation · Backend Systems
         </p>
 
-        <p
-          className="font-sans text-sm md:text-base text-foreground mb-4 fade-in-up max-w-3xl mx-auto"
-          style={{ animationDelay: "0.5s", textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)" }}
-        >
-          I build and evaluate large-language-model systems, focusing on code generation quality, model reliability,
-          and structured evaluation workflows used to improve AI models.
-        </p>
-        <p
-          className="font-sans text-sm md:text-base text-foreground mb-12 fade-in-up max-w-3xl mx-auto"
-          style={{ animationDelay: "0.55s", textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)" }}
-        >
-          My work involves writing production-quality code, designing benchmark datasets, evaluating model outputs using
-          SFT and RLHF-style frameworks, and building systems that make model behavior measurable and improvable.
-        </p>
+       
 
         <div className="flex flex-wrap items-center justify-center gap-4 fade-in-up" style={{ animationDelay: "0.6s" }}>
           <a
