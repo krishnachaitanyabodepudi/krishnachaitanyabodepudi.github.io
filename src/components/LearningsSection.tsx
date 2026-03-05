@@ -1,28 +1,24 @@
 const LearningsSection = () => {
   const learnings = [
     {
-      title: "Models fail quietly, systems shouldn't.",
-      description: "In production-like environments, many failures don't raise exceptions. Retrieval returns low-quality context, embeddings drift, or inputs degrade. Designing explicit failure paths and safe fallbacks mattered more than squeezing out marginal model improvements.",
+      title: "Model outputs require structured evaluation.",
+      description:
+        "Without clear scoring rubrics and benchmark datasets, model improvements become subjective and difficult to measure.",
     },
     {
-      title: "Correctness beats cleverness in applied ML.",
-      description: "Simple, well-scoped pipelines with clear boundaries outperformed more complex designs that were harder to reason about. Enforcing request scoping, data isolation, and predictable behavior prevented subtle bugs that only appeared under concurrent or repeated usage.",
+      title: "Retrieval errors cause many LLM failures.",
+      description:
+        "Incorrect context injection is a major source of hallucinated responses in RAG systems.",
     },
     {
-      title: "Inference behavior matters more than training metrics.",
-      description: "Offline evaluation rarely reflected real usage patterns. Observing inference-time behavior exposed issues like semantic overreach, unstable outputs, and sensitivity to malformed inputs that weren't visible during model experimentation.",
+      title: "Annotation quality determines model quality.",
+      description:
+        "Poor annotation guidelines or inconsistent grading can directly degrade the quality of fine-tuned models.",
     },
     {
-      title: "ML systems live inside larger systems.",
-      description: "Most real problems weren't about the model itself but about how it interacted with APIs, databases, and downstream consumers. Tight API contracts, defensive input validation, and clear integration points made ML outputs usable by other engineers.",
-    },
-    {
-      title: "Operational constraints shape design decisions.",
-      description: "Latency, cost, and reliability constraints forced tradeoffs that influenced architecture more than algorithm choice. Batching, response-size control, and conservative retrieval thresholds often delivered more value than switching models.",
-    },
-    {
-      title: "Debugging ML systems requires observability, not intuition.",
-      description: "Logging, audit trails, and reproducible inputs were essential for understanding why systems behaved the way they did. Without visibility into retrieval results and inference paths, issues were difficult to diagnose or explain.",
+      title: "AI systems must fail safely.",
+      description:
+        "Systems interacting with LLMs should prevent incorrect context or ambiguous prompts from influencing outputs whenever possible.",
     },
   ];
 

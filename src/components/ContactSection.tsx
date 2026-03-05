@@ -38,7 +38,9 @@ const ContactSection = () => {
           Let's Connect
         </h2>
         <p className="mb-12 max-w-2xl mx-auto" style={{ color: 'hsl(220 10% 45%)' }}>
-          I'm currently looking for opportunities to work on applied AI, GenAI, or ML-adjacent backend systems in production environments.
+          I’m currently looking for opportunities to work on applied AI systems, LLM evaluation workflows, and model
+          training pipelines, particularly in environments where AI models are systematically evaluated, benchmarked,
+          and improved.
         </p>
 
         <div className="flex flex-wrap justify-center gap-6">

@@ -41,28 +41,28 @@ const ProjectsSection = () => {
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Problem</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                Most LLM-based applications treat memory as an extension of the prompt, replaying long conversation histories or injecting shared global context. This approach does not scale across users, tasks, or sessions and leads to excessive token usage, degraded response quality, and a high risk of context leakage.
+                LLM applications often rely on replaying long conversation histories or injecting shared global context into prompts. This approach leads to excessive token usage, inconsistent reasoning, and incorrect responses when unrelated context is retrieved. From an AI evaluation perspective, it becomes difficult to measure whether a model’s response quality improves or degrades when memory retrieval is introduced, because retrieval errors can silently influence outputs.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Why It's Hard</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                Long-term memory introduces subtle failure modes. Semantic similarity can surface context that is technically related but logically incorrect. Retrieval failures often fail silently, injecting partial or misleading information into prompts. Without explicit scoping, memory systems become non-deterministic under concurrency and difficult to reason about.
+                Semantic similarity retrieval frequently surfaces context that appears related but is logically incorrect. These retrieval failures introduce subtle model errors such as hallucinated facts, incorrect reasoning paths, or partially relevant responses. Without controlled evaluation frameworks, it is difficult to systematically analyze model behavior across ambiguous prompts, edge cases, and concurrent sessions.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Solution</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                I designed and implemented a persistent memory service that separates long-term memory from conversational context. Memory is stored at a task-scoped namespace and retrieved independently of chat history. Semantic retrieval is implemented using vector embeddings and FAISS, with controlled similarity thresholds to balance recall and precision. The system is exposed via an async FastAPI service, supporting concurrent access while maintaining consistent behavior across sessions and restarts.
+                I implemented a persistent memory service that separates long-term knowledge storage from conversational context. The system uses vector embeddings with FAISS to retrieve semantically relevant context based on similarity thresholds, retrieving only the most relevant information instead of replaying full chat histories. To evaluate model behavior with and without memory retrieval, I designed benchmark prompt datasets containing ambiguous queries, edge cases, and repeated semantic patterns, enabling systematic comparison of response quality across multiple inference scenarios. I also developed rubric-based scoring criteria to assess model outputs across correctness, reasoning clarity, and contextual grounding, making it possible to identify retrieval-driven hallucinations and analyze failure patterns. The memory service is exposed through an asynchronous FastAPI backend, supporting concurrent requests while maintaining deterministic retrieval behavior across sessions.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Reliability & Safety</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                Enforced strict namespace-based isolation using explicit user and task identifiers. Implemented fail-closed retrieval, where embedding or search failures return no memory rather than partial context. Reduced average prompt size by 30–40%, improving inference efficiency and response stability. Validated correctness under concurrent multi-session access with zero observed cross-context leakage.
+                Implemented namespace-based memory isolation using explicit user and task identifiers to ensure contextual boundaries are enforced across sessions. Added fail-closed retrieval logic, where retrieval failures or low-confidence matches return no context rather than injecting incorrect information. Reduced prompt token usage by 30–40%, improving inference efficiency and reducing noise in model responses. Validated system behavior using multi-session benchmark testing to confirm consistent retrieval behavior without cross-context leakage.
               </p>
             </div>
           </div>
@@ -98,28 +98,28 @@ const ProjectsSection = () => {
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Problem</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                Clinical communication systems require context retention across a single patient visit while guaranteeing that data never leaks across visits or patients. Generic conversational memory approaches risk accidental cross-patient exposure, especially when handling multilingual conversations or repeated clinical terms that appear across different visits.
+                Clinical AI systems must retain context within a patient visit while ensuring that information from one patient interaction never leaks into another. Generic conversational memory approaches often rely on global semantic retrieval, which risks retrieving context from unrelated sessions when similar symptoms, medications, or clinical terms appear. In healthcare AI systems, such retrieval failures can introduce incorrect model responses or unsafe contextual assumptions.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Why It's Hard</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                Semantic similarity alone does not enforce access boundaries. Similar symptoms, medications, or phrases can appear across unrelated visits, making incorrect recall more dangerous than missing memory. In clinical contexts, silent retrieval errors are unacceptable from both safety and compliance perspectives.
+                Semantic similarity retrieval alone does not enforce access boundaries. Clinical conversations often share similar terminology across unrelated patient visits, so embedding-based retrieval may surface context from the wrong interaction. From a model evaluation standpoint, detecting these errors requires structured testing using adversarial prompts and controlled evaluation scenarios.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Solution</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                I built a visit-scoped semantic memory system where all reads and writes are explicitly bound to a UUID-based visit identifier. The backend enforces visit context at every layer, from request validation to repository access. Semantic search is performed strictly within visit boundaries, preventing cross-visit contamination even under concurrent workloads.
+                I developed a visit-scoped semantic memory system that enforces strict contextual isolation across patient interactions. All memory reads and writes are bound to a UUID-based visit identifier, ensuring that semantic retrieval operates only within the current interaction scope. The backend enforces visit boundaries across all system layers, including request validation, repository access, and semantic retrieval operations. To evaluate the system’s reliability, I designed adversarial prompts and repeated query patterns to test whether the retrieval system incorrectly surfaced context from unrelated visits. Model responses generated using retrieved context were then analyzed using structured evaluation criteria, including contextual correctness, reasoning consistency, and response safety.
               </p>
             </div>
 
             <div>
               <h4 className="text-lg font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>Reliability & Safety</h4>
               <p className="leading-relaxed" style={{ color: 'hsl(220 10% 45%)' }}>
-                Implemented fail-closed retrieval to prevent partial or incorrect context injection. Added structured audit logging for all semantic access to support traceability and debugging. Validated isolation guarantees under concurrent and adversarial request patterns, achieving 100% isolation accuracy in testing.
+                Implemented fail-closed retrieval mechanisms to prevent partial or low-confidence context from influencing model outputs. Added structured audit logging for all semantic retrieval operations, enabling traceability and debugging of memory access patterns. Conducted concurrent testing across multiple simulated patient sessions to verify that contextual boundaries remained intact, confirming 100% visit isolation accuracy with no cross-session memory contamination.
               </p>
             </div>
           </div>

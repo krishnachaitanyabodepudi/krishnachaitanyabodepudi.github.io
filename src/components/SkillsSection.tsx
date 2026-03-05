@@ -1,32 +1,52 @@
 const SkillsSection = () => {
   const skillCategories = [
     {
-      title: "Programming & Data",
-      skills: ["Python", "SQL", "Pandas", "NumPy"],
+      title: "Programming",
+      skills: ["Python", "C++", "Java", "JavaScript", "SQL", "PHP"],
     },
     {
-      title: "Backend Engineering",
-      skills: ["FastAPI", "REST APIs", "async request handling", "API-based service design", "backend integration"],
+      title: "Full-Stack Development",
+      skills: ["React", "HTML", "CSS", "REST APIs", "FastAPI"],
     },
     {
-      title: "Applied AI & Machine Learning",
-      skills: ["Model integration", "inference pipelines", "feature engineering", "model evaluation", "ML-backed services"],
+      title: "AI Model Evaluation",
+      skills: [
+        "Supervised Fine Tuning (SFT) annotation",
+        "RLHF-style response ranking",
+        "Rubric-based scoring systems",
+        "Model output grading and benchmarking",
+      ],
     },
     {
-      title: "GenAI & Semantic Systems",
-      skills: ["Embeddings", "semantic retrieval", "retrieval-augmented generation (RAG)", "FAISS", "Hugging Face Transformers"],
+      title: "Machine Learning & NLP",
+      skills: [
+        "Transformers",
+        "NLP pipelines",
+        "Semantic similarity",
+        "Text classification",
+        "Model evaluation and error analysis",
+      ],
     },
     {
-      title: "Data & Storage",
-      skills: ["PostgreSQL", "SQLite", "MongoDB", "SQLAlchemy"],
+      title: "LLM Systems",
+      skills: ["Prompt engineering", "Retrieval Augmented Generation (RAG)", "Vector embeddings", "Semantic retrieval pipelines"],
     },
     {
-      title: "Infrastructure & Operations",
-      skills: ["Docker", "CI/CD (GitHub Actions)", "model serving", "environment isolation", "Linux", "AWS", "Git"],
+      title: "Data Annotation & Benchmarking",
+      skills: [
+        "Prompt-response dataset design",
+        "Edge case dataset creation",
+        "Quality grading frameworks",
+        "Annotation guideline development",
+      ],
     },
     {
-      title: "System Design & Reliability",
-      skills: ["Request scoping", "data isolation", "defensive failure handling", "edge-case validation", "predictable runtime behavior"],
+      title: "Databases",
+      skills: ["SQLite", "PostgreSQL", "MySQL"],
+    },
+    {
+      title: "Tools",
+      skills: ["Git", "VS Code", "Jupyter Notebook"],
     },
   ];
 

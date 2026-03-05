@@ -86,16 +86,40 @@ const HeroSection = () => {
       {/* Dark overlay for better text readability */}
       <div className="absolute inset-0 bg-black/40 z-[1]"></div>
       <div className="text-center z-10 max-w-4xl mx-auto relative">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-foreground mb-4 fade-in-up" style={{ animationDelay: "0.2s" }}>
-          I'm Krishna Chaitanya Bodepudi.
+        <h1
+          className="text-4xl md:text-6xl lg:text-7xl font-serif font-normal text-foreground mb-4 fade-in-up"
+          style={{ animationDelay: "0.2s" }}
+        >
+          Krishna Chaitanya Bodepudi
         </h1>
 
-        <p className="text-xl md:text-2xl lg:text-3xl font-serif font-normal text-foreground mb-4 fade-in-up" style={{ animationDelay: "0.3s", textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)' }}>
-          Machine Learning Engineer
+        <p
+          className="text-xl md:text-2xl lg:text-3xl font-serif font-normal text-foreground mb-4 fade-in-up"
+          style={{ animationDelay: "0.3s", textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)" }}
+        >
+          AI / LLM Systems Engineer
         </p>
 
-        <p className="font-sans text-sm md:text-base uppercase tracking-wider mb-12 fade-in-up font-bold text-foreground" style={{ animationDelay: "0.4s", textShadow: '0 2px 4px rgba(0, 0, 0, 0.8)' }}>
-          Applied AI · LLM & Retrieval Systems · Backend Engineering
+        <p
+          className="font-sans text-sm md:text-base uppercase tracking-wider mb-6 fade-in-up font-bold text-foreground"
+          style={{ animationDelay: "0.4s", textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)" }}
+        >
+          Applied AI · Model Evaluation · Data Annotation · Backend Systems
+        </p>
+
+        <p
+          className="font-sans text-sm md:text-base text-foreground mb-4 fade-in-up max-w-3xl mx-auto"
+          style={{ animationDelay: "0.5s", textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)" }}
+        >
+          I build and evaluate large-language-model systems, focusing on code generation quality, model reliability,
+          and structured evaluation workflows used to improve AI models.
+        </p>
+        <p
+          className="font-sans text-sm md:text-base text-foreground mb-12 fade-in-up max-w-3xl mx-auto"
+          style={{ animationDelay: "0.55s", textShadow: "0 2px 4px rgba(0, 0, 0, 0.8)" }}
+        >
+          My work involves writing production-quality code, designing benchmark datasets, evaluating model outputs using
+          SFT and RLHF-style frameworks, and building systems that make model behavior measurable and improvable.
         </p>
 
         <div className="flex flex-wrap items-center justify-center gap-4 fade-in-up" style={{ animationDelay: "0.6s" }}>
@@ -107,7 +131,7 @@ const HeroSection = () => {
             <ChevronDown className="w-4 h-4" />
           </a>
           <a
-            href={`${import.meta.env.BASE_URL}krishna chaitanya bodepudi.pdf`}
+            href={`${import.meta.env.BASE_URL}krishna_chaitanya_bodepudi.pdf`}
             download="krishna-chaitanya-bodepudi.pdf"
             className="inline-flex items-center gap-2 px-8 py-4 border border-muted-foreground/50 text-foreground font-sans text-sm uppercase tracking-wider font-bold hover:border-primary hover:text-primary transition-all"
           >

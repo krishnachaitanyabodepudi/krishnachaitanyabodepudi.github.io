@@ -7,8 +7,8 @@ const AboutSection = () => {
         <p className="text-primary font-sans text-sm tracking-[0.3em] uppercase mb-4 text-center">
           About
         </p>
-        <h2 className="text-3xl md:text-5xl font-serif mb-16 text-center" style={{ color: 'hsl(220 15% 20%)' }}>
-          Let me introduce myself.
+        <h2 className="text-3xl md:text-5xl font-serif mb-16 text-center" style={{ color: "hsl(220 15% 20%)" }}>
+          AI / LLM Systems Engineer
         </h2>
 
         {/* Hero intro with photo */}
@@ -21,15 +21,31 @@ const AboutSection = () => {
             />
           </div>
           <div className="space-y-4">
-            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-              I am Krishna Chaitanya Bodepudi, a Machine Learning Engineer specializing in building ML-driven backend systems and AI-enabled services for real product workflows.
+            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: "hsl(220 10% 45%)" }}>
+              I am an AI engineer specializing in LLM evaluation systems, data annotation workflows, and
+              retrieval-augmented architectures.
             </p>
-            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-              My work sits at the intersection of applied machine learning and backend engineering, where models are exposed through APIs, operated under real-world constraints, and expected to behave predictably in production-like environments. I focus on designing systems where correctness, isolation, and failure handling are first-class concerns, not afterthoughts.
+            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: "hsl(220 10% 45%)" }}>
+              My work focuses on the intersection of coding and AI model training workflows — where engineers must
+              evaluate how models behave in real scenarios, identify failure patterns, and design systems that
+              systematically improve model outputs.
             </p>
-            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: 'hsl(220 10% 45%)' }}>
-              Rather than optimizing models in isolation, I prioritize how ML systems behave once deployed: how they handle malformed inputs, retrieval ambiguity, concurrency, and downstream integration. I treat incorrect or misleading outputs as system failures, and design defensively to prevent them.
+            <p className="text-lg md:text-xl leading-relaxed italic" style={{ color: "hsl(220 10% 45%)" }}>
+              Rather than treating models as black boxes, I focus on understanding why models fail and building
+              evaluation systems that make those failures measurable.
             </p>
+            <div className="pt-2">
+              <p className="text-sm font-semibold mb-2 uppercase tracking-wider" style={{ color: "hsl(220 15% 20%)" }}>
+                I regularly work with:
+              </p>
+              <ul className="list-disc list-inside space-y-1 text-sm" style={{ color: "hsl(220 10% 45%)" }}>
+                <li>Writing code from scratch in Python, C++, JavaScript, SQL, and PHP</li>
+                <li>Designing benchmark datasets for evaluating model outputs</li>
+                <li>Analyzing hallucination, reasoning failures, and retrieval errors</li>
+                <li>Building evaluation pipelines used in SFT and RLHF-style model improvement</li>
+                <li>Creating guidelines and scoring rubrics for structured annotation</li>
+              </ul>
+            </div>
           </div>
         </div>
 
@@ -38,14 +54,15 @@ const AboutSection = () => {
           <h3 className="text-xl font-serif mb-4 uppercase tracking-wider font-semibold" style={{ color: 'hsl(220 15% 20%)' }}>
             Profile
           </h3>
-          <p className="leading-relaxed mb-4" style={{ color: 'hsl(220 10% 45%)' }}>
-            Machine Learning Engineer focused on:
+          <p className="leading-relaxed mb-4" style={{ color: "hsl(220 10% 45%)" }}>
+            AI / LLM Systems Engineer focused on model evaluation, failure analysis, and reliable retrieval-augmented
+            systems.
           </p>
-          <ul className="list-disc list-inside space-y-2 ml-4" style={{ color: 'hsl(220 10% 45%)' }}>
-            <li>ML inference services</li>
-            <li>LLM-powered backend systems</li>
-            <li>Retrieval-augmented architectures</li>
-            <li>Reliability-first, API-driven ML systems</li>
+          <ul className="list-disc list-inside space-y-2 ml-4" style={{ color: "hsl(220 10% 45%)" }}>
+            <li>Structured evaluation of LLM outputs using rubric-based scoring and rankings</li>
+            <li>Designing benchmark and edge-case datasets for real-world failure analysis</li>
+            <li>Building retrieval-augmented systems with deterministic, safe context injection</li>
+            <li>Integrating evaluation workflows into SFT and RLHF-style improvement loops</li>
           </ul>
         </div>
 
@@ -55,36 +72,40 @@ const AboutSection = () => {
             Focus Areas
           </h3>
           <div className="grid md:grid-cols-2 gap-6">
-            <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "hsl(220 10% 96%)" }}>
               <h4 className="text-lg font-serif font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>
-                ML Inference & APIs
+                LLM Evaluation & Data Annotation
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Designing FastAPI-based inference services with attention to latency, batching, validation, and predictable failure behavior under concurrent usage.
+                Designing benchmark datasets, scoring rubrics, and annotation workflows to evaluate LLM responses using
+                SFT-style annotations and RLHF-style ranking frameworks.
               </p>
             </div>
-            <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "hsl(220 10% 96%)" }}>
               <h4 className="text-lg font-serif font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>
-                LLM & Retrieval Systems
+                Code Generation Quality
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Building embedding-based retrieval pipelines with strict scoping, relevance control, and deterministic context injection for downstream LLM inference.
+                Evaluating model-generated code for correctness, efficiency, readability, and edge-case handling across
+                realistic problem settings.
               </p>
             </div>
-            <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "hsl(220 10% 96%)" }}>
               <h4 className="text-lg font-serif font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>
-                Reliability & Failure Handling
+                Model Failure Analysis
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Designing systems that handle malformed inputs, low-confidence retrieval, and partial failures without returning misleading or unsafe outputs.
+                Systematically identifying hallucinations, incorrect retrieval, logical inconsistencies, and reasoning
+                breakdowns in AI outputs.
               </p>
             </div>
-            <div className="p-6 rounded-lg" style={{ backgroundColor: 'hsl(220 10% 96%)' }}>
+            <div className="p-6 rounded-lg" style={{ backgroundColor: "hsl(220 10% 96%)" }}>
               <h4 className="text-lg font-serif font-semibold mb-3" style={{ color: 'hsl(220 15% 20%)' }}>
-                Backend Engineering for Applied ML
+                Retrieval-Augmented Systems & Reliability
               </h4>
               <p className="leading-relaxed text-sm" style={{ color: 'hsl(220 10% 45%)' }}>
-                Developing Python-based backend services and data pipelines that integrate ML cleanly into larger systems through stable APIs and clear contracts.
+                Building retrieval-augmented pipelines that improve contextual retrieval, enforce deterministic behavior,
+                and ensure systems fail safely when context is ambiguous or low-confidence.
               </p>
             </div>
           </div>
